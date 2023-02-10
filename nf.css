@@ -391,17 +391,17 @@ header .logo-container {
 }
 
 .dis-span {
-    background-color: rgb(2, 2, 87);
+    
     padding: var(--smaller);
     text-decoration: none;
     font-size: var(--smaller);
-    color: white;
+    color: rgb(7, 6, 6);
     position: relative;
     bottom: 0;
 }
 
 .dis-span:hover {
-    background-color: blue;
+    background-color: rgb(253, 253, 253);
     cursor: pointer;
 }
 
@@ -570,6 +570,7 @@ header .logo-container {
     align-items: center;
     justify-content: space-around;
     margin: var(--smallest);
+    color: r;
 }
 
 /*///////////////////////////////*/
@@ -631,8 +632,8 @@ header .logo-container {
 }
 
 .his-imgs img {
-    width: calc(var(--i11) );
-    height: calc(var(--i11));
+    width: calc(var(--i14) );
+    height: calc(var(--i14));
 }
 
 /*////////////////////////////
