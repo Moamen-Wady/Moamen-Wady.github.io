@@ -23,6 +23,34 @@
         display: inline-block;
         width: 6.5rem;
     }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        right: 88%;
+        bottom: 20%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: 51%;
+        top: 0%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
 }
 @media only screen and (max-width: 1139px) {
     :root {
@@ -50,11 +78,67 @@
         width: 4.6rem;
         left: calc(var(--i11));
     }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        right: 88%;
+        bottom: 20%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: 51%;
+        top: 0%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
 }
-@media only screen and (min-width: 769px) and ( max-width:930px) {
-body .dis img {
-width: 3rem;
-}
+@media only screen and (min-width: 769px) and (max-width: 930px) {
+    body .dis img {
+        width: 3rem;
+    }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        right: 88%;
+        bottom: 20%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: 51%;
+        top: 0%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -87,6 +171,34 @@ width: 3rem;
         width: var(--i11);
         height: var(--i11);
     }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        right: 0%;
+        bottom: -50%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: -51%;
+        top: 0%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
 }
 @media only screen and (max-width: 555px) {
     :root {
@@ -113,6 +225,34 @@ width: 3rem;
         display: inline-block;
         width: 3.5rem;
         left: calc(var(--i11) * 1.05);
+    }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        left: 0%;
+        bottom: -60%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: -50%;
+        top: 23%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
     }
 }
 
@@ -142,6 +282,33 @@ width: 3rem;
         width: 2.35rem;
         left: calc(var(--i11) * 1);
     }
+    body .invisible3:hover,
+    .texxt3s:hover .invisible3 {
+        display: inline-block;
+        position: absolute;
+        left: 0%;
+        bottom: -70%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
+    body .invisible4:hover,.texxt4s:hover .invisible4 {
+        display: inline-block;
+        position: absolute;
+        left: 0%;
+        top: 40%;
+        background-color: rgb(0, 0, 0);
+        width: var(--i11);
+        text-align: left;
+        color: white;
+        font-size: var(--smaller);
+        border-radius: 5%;
+        padding: var(--smallest);
+    }
 }
 
 body {
@@ -150,7 +317,7 @@ body {
     position: relative;
 }
 #content {
-padding-bottom: var(--i20);
+    padding-bottom: var(--i20);
 }
 h1 {
     font-size: var(--small);
@@ -178,7 +345,7 @@ h1 {
 }
 
 .main a > img {
-    width:19%;
+    width: 19%;
     display: inline;
 }
 #haha {
@@ -394,7 +561,6 @@ header .logo-container {
 }
 
 .dis-span {
-    
     padding: var(--smaller);
     text-decoration: none;
     font-size: var(--smaller);
@@ -433,7 +599,7 @@ header .logo-container {
 }
 
 .dis img {
-    width: calc(var(--i5)*.65);
+    width: calc(var(--i5) * 0.65);
     height: calc(var(--i11) * 0.35);
 }
 
@@ -457,6 +623,7 @@ header .logo-container {
     padding: var(--smallest);
     position: absolute;
     bottom: 0;
+    width: 100vw;
 }
 
 .site-footer hr {
@@ -638,7 +805,7 @@ header .logo-container {
 }
 
 .his-imgs img {
-    width: calc(var(--i14) );
+    width: calc(var(--i14));
     height: calc(var(--i14));
 }
 
@@ -787,8 +954,8 @@ Mission */
     position: absolute;
     right: 101%;
     bottom: 20%;
-    background-color: rgb(0, 0, 0, 80%);
-    width: var(--i14);
+    background-color: rgb(0, 0, 0);
+    width: var(--i11);
     text-align: left;
     color: white;
     font-size: var(--smaller);
@@ -801,21 +968,7 @@ Mission */
     position: absolute;
     left: 101%;
     bottom: 10%;
-    background-color: rgb(0, 0, 0, 80%);
-    width: var(--i14);
-    text-align: left;
-    color: white;
-    font-size: var(--smaller);
-    border-radius: 5%;
-    padding: var(--smallest);
-}
-.invisible3:hover,
-.texxt3s:hover .invisible3 {
-    display: inline-block;
-    position: absolute;
-    right: 101%;
-    bottom: 20%;
-    background-color: rgb(0, 0, 0, 80%);
+    background-color: rgb(0, 0, 0);
     width: var(--i11);
     text-align: left;
     color: white;
@@ -823,28 +976,15 @@ Mission */
     border-radius: 5%;
     padding: var(--smallest);
 }
-.invisible4:hover,
-.texxt4s:hover .invisible4 {
-    display: inline-block;
-    position: absolute;
-    left: 51%;
-    top: 0%;
-    background-color: rgb(0, 0, 0, 80%);
-    width: var(--i14);
-    text-align: left;
-    color: white;
-    font-size: var(--smaller);
-    border-radius: 5%;
-    padding: var(--smallest);
-}
+
 .invisible5:hover,
 .texxt5s:hover .invisible5 {
     display: inline-block;
     position: absolute;
     right: 101%;
     bottom: 20%;
-    background-color: rgb(0, 0, 0, 80%);
-    width: var(--i14);
+    background-color: rgb(0, 0, 0);
+    width: var(--i11);
     text-align: left;
     color: white;
     font-size: var(--smaller);
@@ -857,8 +997,8 @@ Mission */
     position: absolute;
     left: 101%;
     bottom: 20%;
-    background-color: rgb(0, 0, 0, 80%);
-    width: var(--i14);
+    background-color: rgb(0, 0, 0);
+    width: var(--i11);
     text-align: left;
     color: white;
     font-size: var(--smaller);
