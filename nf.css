@@ -16,12 +16,12 @@
     }
     body .our:hover .ourServices {
         display: inline-block;
-        width: 7.9rem;
+        width: max-content;
         position: absolute;
     }
     body .about:hover .aboutUs {
         display: inline-block;
-        width: 6.5rem;
+        width: max-content;
     }
     body .invisible3:hover,
     .texxt3s:hover .invisible3 {
@@ -70,12 +70,12 @@
     }
     body .about:hover .aboutUs {
         display: inline-block;
-        width: 3.8rem;
+        width: max-content;
         left: calc(var(--i11));
     }
     body .our:hover .ourServices {
         display: inline-block;
-        width: 4.6rem;
+        width: max-content;
         left: calc(var(--i11));
     }
     body .invisible3:hover,
@@ -159,12 +159,12 @@
     }
     body .about:hover .aboutUs {
         display: inline-block;
-        width: 3.8rem;
+        width: max-content;
         left: calc(var(--i11) * 1);
     }
     body .our:hover .ourServices {
         display: inline-block;
-        width: 4.6rem;
+        width: max-content;
         left: calc(var(--i11) * 1);
     }
     body .shb img {
@@ -218,13 +218,13 @@
     }
     body .about:hover .aboutUs {
         display: inline-block;
-        width: 3rem;
-        left: calc(var(--i11) * 1.0);
+        width: max-content;
+        left: calc(var(--i11) * 1);
     }
     body .our:hover .ourServices {
         display: inline-block;
-        width: 3.5rem;
-        left: calc(var(--i11) * 1.0);
+        width: max-content;
+        left: calc(var(--i11) * 1);
     }
     body .invisible3:hover,
     .texxt3s:hover .invisible3 {
@@ -274,12 +274,12 @@
     }
     body .about:hover .aboutUs {
         display: inline-block;
-        width: 1.85rem;
+        width: max-content;
         left: calc(var(--i11) * 1);
     }
     body .our:hover .ourServices {
         display: inline-block;
-        width: 2.35rem;
+        width: max-content;
         left: calc(var(--i11) * 1);
     }
     body .invisible3:hover,
@@ -296,7 +296,8 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,.texxt4s:hover .invisible4 {
+    body .invisible4:hover,
+    .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: 0%;
@@ -420,11 +421,6 @@ h1 {
     padding: 0;
 }
 
-.about:hover .aboutUs {
-    display: inline-block;
-    width: 7.4rem;
-}
-
 .about:hover .aboutUs li {
     background-color: rgb(18, 17, 74, 100%);
 }
@@ -441,11 +437,6 @@ h1 {
     left: var(--i11);
     text-align: center;
     padding: 0;
-}
-
-.our:hover .ourServices {
-    display: inline-block;
-    width: 7.3rem;
 }
 
 .our:hover .ourServices li {
@@ -680,7 +671,7 @@ header .logo-container {
 .footer-links {
     margin: auto;
     padding: 0;
-    text-align: justify;
+    text-align: left;
     list-style-type: none;
 }
 
@@ -751,6 +742,7 @@ header .logo-container {
     background-color: rgb(0, 0, 139, 10%);
     padding: var(--smaller);
     margin: var(--smaller);
+    height: max-content;
 }
 
 .ntbk {
