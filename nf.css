@@ -623,7 +623,6 @@ header .logo-container {
     padding: var(--smallest);
     position: absolute;
     bottom: 0;
-    width: 100%;
 }
 
 .site-footer hr {
