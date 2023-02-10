@@ -147,6 +147,10 @@ width: 3rem;
 body {
     margin: 0;
     padding: 0;
+    position: relative;
+}
+#content {
+padding-bottom: var(--i20);
 }
 h1 {
     font-size: var(--small);
@@ -451,6 +455,8 @@ header .logo-container {
     font-size: var(--smaller);
     color: white;
     padding: var(--smallest);
+    position: absolute;
+    bottom: 0;
 }
 
 .site-footer hr {
