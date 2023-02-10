@@ -628,7 +628,6 @@ header .logo-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
-    width: 21%;
 }
 
 .his-imgs img {
