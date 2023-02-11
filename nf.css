@@ -525,8 +525,9 @@ header .logo-container {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items:flex-start;
     margin: var(--small);
+    height: max-content;
 }
 
 .dis {
@@ -538,7 +539,7 @@ header .logo-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: calc(var(--i15) * 1.1125);
+    min-height: max-content;
 }
 
 .diss {
@@ -548,9 +549,9 @@ header .logo-container {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: calc(var(--i15) * 1.1125);
+    min-height: max-content;
 }
 
 .dis-h1 {
@@ -559,6 +560,9 @@ header .logo-container {
     color: black;
     text-align: center;
     display: block;
+    position: relative;
+    bottom:  0;
+    width: 30%;
 }
 
 .dis-span {
@@ -566,8 +570,6 @@ header .logo-container {
     text-decoration: none;
     font-size: var(--smaller);
     color: rgb(7, 6, 6);
-    position: relative;
-    bottom: 0;
 }
 
 .dis-span:hover {
@@ -594,14 +596,19 @@ header .logo-container {
 
 .clients {
     display: grid;
-    width: 100%;
+    width: 50%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+    margin: auto;
+    height: 100%;
 }
 
-.dis img {
-    width: calc(var(--i5) * 0.65);
-    height: calc(var(--i11) * 0.35);
+.clients img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: inline-block;
 }
 
 .client-textz {
@@ -1322,4 +1329,31 @@ quality statement /*/
     position: absolute;
     animation: slideshowxz 18s infinite;
     opacity: 0;
+}
+/*//////////////////////////////////*/
+.triconz {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
+height: max-content;
+}
+
+.disz {
+display: flex;
+align-items: center;
+justify-content:space-around;
+width: 100%;
+text-align: center;
+}
+.disch > img {
+max-width: 30%;
+display: inline-block;
+}
+.disz > .disch {
+width: 30%;
+min-height: 100%;
+}
+.disz > a {
+width: 30%;
 }
