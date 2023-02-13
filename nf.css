@@ -805,7 +805,7 @@ header .logo-container {
     text-align: center;
     z-index: -1;
     position: absolute;
-    top: 0%;
+    top: 15%;
     left: 15%;
     width: var(--i20);
     height: var(--i20); 
