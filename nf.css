@@ -808,7 +808,7 @@ header .logo-container {
     top: 0%;
     left: 15%;
     width: var(--i20);
-    height: var(--i20);
+    height: var(--i20); 
     opacity: 0.5;
 }
 
