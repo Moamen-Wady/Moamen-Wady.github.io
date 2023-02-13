@@ -1030,6 +1030,9 @@ Mission */
     animation-duration: 15s;
     animation-delay: 0s;
     animation-iteration-count: infinite;
+    -webkit-animation-name: back;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-delay: 0s;
     -webkit-animation-iteration-count: infinite;
     transition-property: background-image;
     transition-duration: 0s;
