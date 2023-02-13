@@ -108,14 +108,13 @@
     }
 }
 
-@media only screen and (min-width: 769px)  {
+@media only screen and (min-width: 769px) {
     body .contact-form {
         height: 50vh;
     }
     body .map-if iframe {
         height: 50vh;
     }
-
 }
 @media only screen and (min-width: 769px) and (max-width: 930px) {
     body .dis img {
@@ -453,7 +452,7 @@ h1 {
     background-color: rgb(18, 17, 74, 100%);
 }
 
-/*/////////////////////////*/
+/*/ ////////////////////////*/
 .slideanim {
     visibility: hidden;
     visibility: visible\9; /*For old IE browsers IE6-8 */
@@ -525,7 +524,7 @@ header .logo-container {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
-    align-items:flex-start;
+    align-items: flex-start;
     margin: var(--small);
     height: max-content;
 }
@@ -561,7 +560,7 @@ header .logo-container {
     text-align: center;
     display: block;
     position: relative;
-    bottom:  0;
+    bottom: 0;
     width: 30%;
 }
 
@@ -660,12 +659,21 @@ header .logo-container {
 .foot-com {
     display: inline-block;
     text-align: left;
-    width: 18%;
+    width: 17%;
+    font-family: sans-serif;
+    padding: 0.1px;
 }
 .foot-com-1 {
     display: inline-block;
     text-align: center;
     width: 25%;
+    font-family: sans-serif;
+}
+.foot-com2 {
+    display: inline-block;
+    text-align: left;
+    width: 41%;
+    font-family: sans-serif;
 }
 .foot-com-1 img {
     width: 90%;
@@ -799,8 +807,8 @@ header .logo-container {
     position: absolute;
     top: 0%;
     left: 15%;
-    width: 60%;
-    height: 60%;
+    width: var(--i20);
+    height: var(--i20);
     opacity: 0.5;
 }
 
@@ -1018,9 +1026,13 @@ Mission */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    animation: 15s 1s infinite back;
+    animation-name: back;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
     transition-property: background-image;
-    transition-duration: 1s;
+    transition-duration: 0s;
     transition-timing-function: ease-in-out;
 }
 
@@ -1028,32 +1040,22 @@ Mission */
 @keyframes back {
     17% {
         background-image: url("bg/bg.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     34% {
         background-image: url("bg/bg1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     51% {
         background-image: url("bg/bg2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     68% {
         background-image: url("bg/bg3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     85% {
         background-image: url("bg/bg4.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
 
     /* Animation Does Not End At 100% Because It Makes The Images Transition In/Out Better For Some Reason*/
@@ -1201,28 +1203,60 @@ quality statement /*/
     height: var(--i15);
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    background-color: transparent;
     display: inline-block;
     margin: var(--small);
+    cursor: pointer;
 }
 
-.slidez > div {
+.slidez div {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
-    animation: slideshowz 18s infinite;
     opacity: 0;
+}
+.slidez > span:hover div {
+    animation: slideshowz 15s infinite;
+}
+.slidez > span:hover span {
+    opacity: 1;
+}
+
+.slidez > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.slidez > span > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
 }
 .slidexz {
     width: var(--i20);
     height: var(--i15);
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    background-color: white;
     display: inline-block;
     margin: var(--small);
+    cursor: pointer;
 }
 
 .slidexz > div {
@@ -1230,6 +1264,7 @@ quality statement /*/
     height: 100%;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
     opacity: 1;
 }
@@ -1248,20 +1283,17 @@ quality statement /*/
     margin-right: var(--smallest);
 }
 
-.slidez > div:nth-child(2) {
+.slidez > span div:nth-child(2) {
     animation-delay: 3s;
 }
-.slidez > div:nth-child(3) {
+.slidez > span div:nth-child(3) {
     animation-delay: 6s;
 }
-.slidez > div:nth-child(4) {
+.slidez > span div:nth-child(4) {
     animation-delay: 9s;
 }
-.slidez > div:nth-child(5) {
+.slidez > span div:nth-child(5) {
     animation-delay: 12s;
-}
-.slidez > div:nth-child(6) {
-    animation-delay: 15s;
 }
 
 @keyframes slideshowz {
@@ -1274,8 +1306,8 @@ quality statement /*/
     30% {
         opacity: 0;
     }
-    40% {
-        transform: scale(1.1);
+    100% {
+        opacity: 0;
     }
 }
 .slidexxz > div:nth-child(2) {
@@ -1293,9 +1325,6 @@ quality statement /*/
 .slidexxz > div:nth-child(6) {
     animation-delay: 15s;
 }
-.slidexxz > div:nth-child(7) {
-    animation-delay: 17s;
-}
 
 @keyframes slideshowxz {
     10% {
@@ -1307,52 +1336,64 @@ quality statement /*/
     30% {
         opacity: 0;
     }
-    40% {
-        transform: scale(1.1);
-    }
 }
+
 .slidexxz {
     width: var(--i20);
     height: var(--i15);
     overflow: hidden;
     position: relative;
-    background-color: #000;
+    background-color: white;
     display: inline-block;
     margin: var(--small);
+    cursor: pointer;
 }
 
 .slidexxz > div {
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
-    animation: slideshowxz 18s infinite;
     opacity: 0;
 }
-/*//////////////////////////////////*/
+
+.slidexxz > span:hover div {
+    animation: slideshowxz 18s infinite;
+}
+.slidexxz > span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+/*/ /////////////////////////////////*/
 .triconz {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: max-content;
 }
 
 .disz {
-display: flex;
-align-items: center;
-justify-content:space-around;
-width: 100%;
-text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
 }
 .disch > img {
-max-width: 30%;
-display: inline-block;
+    max-width: 30%;
+    display: inline-block;
 }
 .disz > .disch {
-width: 30%;
+    width: 30%;
 }
 .disz > a {
-width: 30%;
+    width: 30%;
 }
