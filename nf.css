@@ -1196,8 +1196,8 @@ technical design office styles /*/
 /*////////////
 careers /*/
 .carr {
-width: 50%;
-margin: auto;
+    width: 50%;
+    margin: auto;
 }
 .link-span {
     font-size: var(--smaller);
@@ -1225,8 +1225,7 @@ margin: auto;
     margin: auto;
     margin-bottom: var(--smaller);
     text-align: center;
-text-align-last: center;
-
+    text-align-last: center;
 }
 
 .careers-hd-txt1 {
@@ -1236,15 +1235,14 @@ text-align-last: center;
     display: inline-block;
     margin: 0;
     margin-bottom: var(--smaller);
-text-align-last: center;
-
+    text-align-last: center;
 }
 
 /*//////////
 quality statement /*/
 .ry-list li {
     color: black;
-    font-size: var(--smaller);
+    font-size: calc(var(--smaller));
     padding: 1px;
     margin: var(--smallest);
 }
@@ -1468,23 +1466,42 @@ quality statement /*/
     color: rgb(56, 45, 45);
 }
 .qsx {
-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .qsx > div {
-width: 45%;
-float: right;
+    width: 46%;
+    text-align: center;
 }
-.qsx >div > img {
-max-width:80%;
+.qsx > div > img {
+    max-width: 40%;
+}
+.qsx > div > p b {
+    font-size: var(--mid-small);
+    color: rgb(57, 172, 233);
+
+}
+.qsx > div > p {
+text-align: center;
+max-width: 60%;
+text-align-last:center  ;
+}
+.qsx > div > text {
+font-size: var(--small);
+font-weight: bold;
+display: block;
+font-family: sans-serif;
 }
 .qs {
-float: left;
-width: 50%;
+    width: 40%;
+    font-size: calc(var(--smaller) );
+    text-align: justify;
 }
-.qs>li{
-margin: var(--mid-small);
+.qs > li {
+    margin-bottom: var(--small);
+    margin-top: var(--small);
 }
 .qs-1 {
-text-align-last: justify;
-
+    text-align-last: justify;
 }
