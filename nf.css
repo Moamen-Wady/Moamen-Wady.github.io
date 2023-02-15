@@ -326,9 +326,7 @@ body {
     padding: 0;
     position: relative;
 }
-#content {
-    padding-bottom: var(--i5);
-}
+
 h1 {
     font-size: var(--small);
 }
@@ -1197,10 +1195,14 @@ technical design office styles /*/
 
 /*////////////
 careers /*/
+.carr {
+width: 50%;
+margin: auto;
+}
 .link-span {
     font-size: var(--smaller);
     padding: var(--smallest);
-    text-align: center;
+    text-align: justify;
 }
 .link-span a {
     text-decoration: none;
@@ -1219,9 +1221,12 @@ careers /*/
     font-family: sans-serif;
     font-size: var(--mid-small);
     color: black;
-    display: inline-block;
-    margin: 0;
+    display: block;
+    margin: auto;
     margin-bottom: var(--smaller);
+    text-align: center;
+text-align-last: center;
+
 }
 
 .careers-hd-txt1 {
@@ -1231,6 +1236,8 @@ careers /*/
     display: inline-block;
     margin: 0;
     margin-bottom: var(--smaller);
+text-align-last: center;
+
 }
 
 /*//////////
@@ -1239,6 +1246,7 @@ quality statement /*/
     color: black;
     font-size: var(--smaller);
     padding: 1px;
+    margin: var(--smallest);
 }
 /*///////////////////////**/
 
@@ -1458,4 +1466,25 @@ quality statement /*/
     font-size: var(--mid-larger);
     font-family: sans-serif;
     color: rgb(56, 45, 45);
+}
+.qsx {
+width: 100%;
+}
+.qsx > div {
+width: 45%;
+float: right;
+}
+.qsx >div > img {
+max-width:80%;
+}
+.qs {
+float: left;
+width: 50%;
+}
+.qs>li{
+margin: var(--mid-small);
+}
+.qs-1 {
+text-align-last: justify;
+
 }
