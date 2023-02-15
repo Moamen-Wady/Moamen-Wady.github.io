@@ -330,6 +330,9 @@ body {
 h1 {
     font-size: var(--small);
 }
+#content {
+min-height: 100vh;
+}
 .global-mission {
     margin-bottom: var(--smaller);
     background-color: rgb(0, 0, 139, 10%);
@@ -784,7 +787,7 @@ header .logo-container {
 }
 
 .shb img {
-    width: var(--i14);
+    max-width: 80%;
     object-fit: contain;
 }
 
@@ -792,10 +795,10 @@ header .logo-container {
     display: grid;
     position: relative;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 2%;
 }
 #overviewer {
-    width: 1050px;
+    width: 70%;
     margin: auto;
     margin-bottom: var(--mid);
 }
