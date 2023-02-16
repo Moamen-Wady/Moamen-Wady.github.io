@@ -266,6 +266,9 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
+    body .proj-head {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 410px) {
@@ -321,6 +324,9 @@
         font-size: var(--smaller);
         border-radius: 5%;
         padding: var(--smallest);
+    }
+    body .proj-head {
+        width: 90%;
     }
 }
 /*////////////////////////////////////////////////////////////////////////////*/
