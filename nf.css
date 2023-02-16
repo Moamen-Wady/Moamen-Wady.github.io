@@ -528,6 +528,54 @@ header .logo-container {
     height: 100%;
 }
 
+/* Setup For An Image That Fits On Most Screens And Resizes*/
+header .xxx {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: back;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: back;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    width: 100%;
+    height: calc(var(--i20) * 2);
+}
+
+.an div:nth-child(2) {
+    animation-delay: 3s;
+}
+.an div:nth-child(3) {
+    animation-delay: 6s;
+}
+.an div:nth-child(4) {
+    animation-delay: 9s;
+}
+.an div:nth-child(5) {
+    animation-delay: 12s;
+}
+
+@keyframes back {
+    10% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /*/////////////////////////////////////////////*/
 .intro {
     text-align: center;
@@ -556,38 +604,35 @@ header .logo-container {
     font-family: sans-serif;
     text-align-last: center;
 }
-
-.tri-con {
-    text-align: center;
+/*///////////////////////////////////////////*/
+.triconz {
     display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin: var(--small);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: max-content;
 }
 
-.dis {
-    padding: var(--smallest);
-    width: 20%;
-    text-align: center;
-    position: relative;
+.disz {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    min-height: max-content;
-}
-
-.diss {
-    padding: var(--smallest);
-    width: 20%;
-    text-align: center;
-    position: relative;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    min-height: max-content;
+    width: 100%;
+    text-align: center;
+}
+.disch > img {
+    max-width: 50%;
+    display: inline-block;
+}
+.disch > .fst {
+    max-width: 30%;
+    display: inline-block;
+}
+.disz > .disch {
+    width: 30%;
+}
+.disz > a {
+    width: 30%;
 }
 
 .dis-h1 {
@@ -613,23 +658,6 @@ header .logo-container {
     cursor: pointer;
 }
 
-.dis-h5 {
-    font-size: var(--smaller);
-    color: black;
-}
-
-.dis-right {
-    font-family: sans-serif;
-    font-size: var(--small);
-    color: black;
-}
-
-.diss img {
-    width: 50%;
-    height: calc(var(--i11) * 0.7);
-    display: inline-block;
-}
-
 .clients {
     display: grid;
     width: 50%;
@@ -652,11 +680,6 @@ header .logo-container {
     font-size: var(--mid-small);
     color: black;
     text-align: center;
-}
-
-#overviewer {
-    padding: var(--smallest);
-    margin-bottom: var(--smallest);
 }
 
 /*footer*/
@@ -807,6 +830,7 @@ header .logo-container {
     width: 70%;
     margin: auto;
     margin-bottom: var(--mid);
+    padding: var(--smallest);
 }
 /*///////////////////////////////*/
 /*history*/
@@ -937,15 +961,6 @@ Mission */
     width: var(--i20);
 }
 
-.under-logo {
-    font-size: var(--smaller);
-    font-weight: bolder;
-    color: black;
-    text-align: center;
-    font-family: sans-serif;
-    margin: 0;
-}
-
 .mis-h2 {
     color: black;
     font-size: var(--small);
@@ -1066,50 +1081,6 @@ Mission */
     font-size: var(--smaller);
     border-radius: 5%;
     padding: var(--smallest);
-}
-
-/* Setup For An Image That Fits On Most Screens And Resizes*/
-.an {
-    background-image: url("bg/bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    animation-name: back;
-    animation-duration: 15s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: back;
-    -webkit-animation-duration: 15s;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    transition-property: background-image;
-    transition-duration: 0s;
-    transition-timing-function: ease-in-out;
-}
-
-/* The Keyframes*/
-@keyframes back {
-    17% {
-        background-image: url("bg/bg.jpg");
-    }
-
-    34% {
-        background-image: url("bg/bg1.jpg");
-    }
-
-    51% {
-        background-image: url("bg/bg2.jpg");
-    }
-
-    68% {
-        background-image: url("bg/bg3.jpg");
-    }
-
-    85% {
-        background-image: url("bg/bg4.jpg");
-    }
-
-    /* Animation Does Not End At 100% Because It Makes The Images Transition In/Out Better For Some Reason*/
 }
 
 /*/////////////////////////////// 
@@ -1251,6 +1222,46 @@ careers /*/
 
 /*//////////
 quality statement /*/
+.qsx {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.qsx > div {
+    width: 46%;
+    text-align: center;
+}
+.qsx > div > img {
+    max-width: 40%;
+}
+.qsx > div > p b {
+    font-size: var(--mid-small);
+    color: rgb(57, 172, 233);
+}
+.qsx > div > p {
+    text-align: center;
+    max-width: 60%;
+    text-align-last: center;
+}
+.qsx > div > text {
+    font-size: var(--small);
+    font-weight: bold;
+    display: block;
+    font-family: sans-serif;
+}
+.qs {
+    width: 40%;
+    font-size: calc(var(--smaller));
+    text-align: justify;
+}
+.qs > li {
+    margin-bottom: var(--small);
+    margin-top: var(--small);
+}
+.qs-1 {
+    text-align-last: justify;
+}
+
 .ry-list li {
     color: black;
     font-size: calc(var(--smaller));
@@ -1378,96 +1389,7 @@ quality statement /*/
         opacity: 0;
     }
 }
-.slidexxz > div:nth-child(2) {
-    animation-delay: 3s;
-}
-.slidexxz > div:nth-child(3) {
-    animation-delay: 6s;
-}
-.slidexxz > div:nth-child(4) {
-    animation-delay: 9s;
-}
-.slidexxz > div:nth-child(5) {
-    animation-delay: 12s;
-}
-.slidexxz > div:nth-child(6) {
-    animation-delay: 15s;
-}
-
-@keyframes slideshowxz {
-    10% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 1;
-    }
-    30% {
-        opacity: 0;
-    }
-}
-
-.slidexxz {
-    width: var(--i20);
-    height: var(--i15);
-    overflow: hidden;
-    position: relative;
-    background-color: white;
-    display: inline-block;
-    margin: var(--small);
-}
-
-.slidexxz > div {
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    opacity: 0;
-}
-
-.slidexxz > span:hover div {
-    animation: slideshowxz 18s infinite;
-}
-.slidexxz > span {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-}
 /*/ /////////////////////////////////*/
-.triconz {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: max-content;
-}
-
-.disz {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-}
-.disch > img {
-    max-width: 50%;
-    display: inline-block;
-}
-.disch > .fst {
-    max-width: 30%;
-    display: inline-block;
-}
-.disz > .disch {
-    width: 30%;
-}
-.disz > a {
-    width: 30%;
-}
 
 .cl-page {
     width: 100%;
@@ -1481,43 +1403,4 @@ quality statement /*/
     font-size: var(--mid-larger);
     font-family: sans-serif;
     color: rgb(56, 45, 45);
-}
-.qsx {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.qsx > div {
-    width: 46%;
-    text-align: center;
-}
-.qsx > div > img {
-    max-width: 40%;
-}
-.qsx > div > p b {
-    font-size: var(--mid-small);
-    color: rgb(57, 172, 233);
-}
-.qsx > div > p {
-    text-align: center;
-    max-width: 60%;
-    text-align-last: center;
-}
-.qsx > div > text {
-    font-size: var(--small);
-    font-weight: bold;
-    display: block;
-    font-family: sans-serif;
-}
-.qs {
-    width: 40%;
-    font-size: calc(var(--smaller));
-    text-align: justify;
-}
-.qs > li {
-    margin-bottom: var(--small);
-    margin-top: var(--small);
-}
-.qs-1 {
-    text-align-last: justify;
 }
