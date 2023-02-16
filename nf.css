@@ -972,10 +972,10 @@ Mission */
 
 .texxt2s {
     border: 1px solid black;
-    padding: var(--smaller);
-    position: relative;
-    width: var(--i11);
     border-radius: 70%;
+    padding: var(--smaller);
+    width: var(--i11);
+    position: relative;
 }
 
 .texxt3s {
@@ -987,27 +987,27 @@ Mission */
 }
 
 .texxt4s {
-    position: relative;
     border: 1px solid black;
     border-radius: 70%;
     padding: var(--smaller);
     width: var(--i11);
+    position: relative;
 }
 
 .texxt5s {
-    position: relative;
     border: 1px solid black;
     border-radius: 70%;
     padding: var(--smaller);
     width: var(--i11);
+    position: relative;
 }
 
 .texxt6s {
-    position: relative;
     border: 1px solid black;
     border-radius: 70%;
     padding: var(--smaller);
     width: var(--i11);
+    position: relative;
 }
 
 .invisible1:hover,
