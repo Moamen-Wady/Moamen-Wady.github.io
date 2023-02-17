@@ -128,8 +128,8 @@
     .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
-        right: 88%;
-        bottom: 20%;
+        right: 0%;
+        bottom: -50%;
         background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: var(--i14);
@@ -1060,7 +1060,7 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: var(--i14);
+    max-width: calc(var(--i11)*1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
@@ -1075,7 +1075,7 @@ Mission */
     bottom: -30%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: var(--i14);
+    max-width: calc(var(--i11)*1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
@@ -1091,7 +1091,7 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: var(--i14);
+    max-width: calc(var(--i11)*1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
@@ -1106,7 +1106,7 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: var(--i14);
+    max-width: calc(var(--i11)*1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
