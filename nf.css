@@ -29,7 +29,7 @@
         position: absolute;
         right: 88%;
         bottom: 20%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -43,7 +43,7 @@
         position: absolute;
         left: 51%;
         top: 0%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -84,7 +84,7 @@
         position: absolute;
         right: 88%;
         bottom: 20%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -98,7 +98,7 @@
         position: absolute;
         left: 51%;
         top: 0%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -126,7 +126,7 @@
         position: absolute;
         right: 88%;
         bottom: 20%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -140,7 +140,7 @@
         position: absolute;
         left: 51%;
         top: 0%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: var(--i11);
         text-align: left;
         color: white;
@@ -186,7 +186,7 @@
         position: absolute;
         right: 0%;
         bottom: -50%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -201,7 +201,7 @@
         position: absolute;
         left: -51%;
         top: 0%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -246,7 +246,7 @@
         position: absolute;
         left: 0%;
         bottom: -60%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -261,7 +261,7 @@
         position: absolute;
         left: -50%;
         top: 23%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -270,7 +270,9 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .proj-head {
+    body .proj-head,
+    body .ov-info,
+    body .intro {
         width: 90%;
     }
 }
@@ -307,7 +309,7 @@
         position: absolute;
         left: 0%;
         bottom: -70%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -322,7 +324,7 @@
         position: absolute;
         left: 0%;
         top: 40%;
-        background-color: rgb(48, 71,87);
+        background-color: rgb(48, 71, 87);
         width: max-content;
         max-width: fit-content;
         text-align: left;
@@ -381,7 +383,7 @@ h1 {
 #haha {
     background-color: transparent;
     border: 0;
-cursor: pointer;
+    cursor: pointer;
 }
 #haha:hover {
     background-color: rgb(48, 71, 87);
@@ -813,7 +815,7 @@ header .xxx {
     text-align: justify;
     font-size: var(--smaller);
     font-family: sans-serif;
-    width: 55%;
+    width: inherit;
     margin: auto;
     text-align-last: center;
 }
@@ -910,8 +912,13 @@ header .xxx {
 
 /*////////////////////////////
 Mission */
-.invisible1,.invisible2,.invisible3,.invisible4,.invisible5,.invisible6 {
-z-index: 999999;
+.invisible1,
+.invisible2,
+.invisible3,
+.invisible4,
+.invisible5,
+.invisible6 {
+    z-index: 999999;
 }
 .global-inline {
     margin: auto;
@@ -1045,7 +1052,7 @@ z-index: 999999;
     position: absolute;
     right: 101%;
     bottom: 20%;
-    background-color: rgb(48, 71,87);
+    background-color: rgb(48, 71, 87);
     width: var(--i11);
     text-align: left;
     color: white;
@@ -1059,7 +1066,7 @@ z-index: 999999;
     position: absolute;
     left: 101%;
     bottom: -30%;
-    background-color: rgb(48, 71,87);
+    background-color: rgb(48, 71, 87);
     width: var(--i11);
     text-align: left;
     color: white;
@@ -1074,7 +1081,7 @@ z-index: 999999;
     position: absolute;
     right: 101%;
     bottom: 20%;
-    background-color: rgb(48, 71,87);
+    background-color: rgb(48, 71, 87);
     width: var(--i11);
     text-align: left;
     color: white;
@@ -1088,7 +1095,7 @@ z-index: 999999;
     position: absolute;
     left: 101%;
     bottom: 20%;
-    background-color: rgb(48, 71,87);
+    background-color: rgb(48, 71, 87);
     width: var(--i11);
     text-align: left;
     color: white;
@@ -1257,11 +1264,13 @@ quality statement /*/
     max-width: 60%;
     text-align-last: center;
 }
-.qsx > div > text {
-    font-size: var(--small);
+.qsx text {
+    font-size:calc( var(--small)*.8);
     font-weight: bold;
     display: block;
+    margin: auto;
     font-family: sans-serif;
+    max-width:60% ;
 }
 .qs {
     width: 40%;
@@ -1421,8 +1430,8 @@ quality statement /*/
 
 /*///////////////////////////*/
 .hint {
-color:rgb(57, 172, 233);
-font-size: var(--smaller);
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-text-transform: capitalize;
+    color: rgb(57, 172, 233);
+    font-size: var(--smaller);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: capitalize;
 }
