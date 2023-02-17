@@ -23,8 +23,7 @@
         display: inline-block;
         width: max-content;
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         right: 88%;
@@ -38,8 +37,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: 51%;
@@ -80,8 +78,7 @@
         width: max-content;
         left: calc(var(--i11));
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         right: 88%;
@@ -95,8 +92,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: 51%;
@@ -124,8 +120,7 @@
     body .dis img {
         width: 3rem;
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         right: 0%;
@@ -139,8 +134,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: 51%;
@@ -186,8 +180,7 @@
         width: var(--i11);
         height: var(--i11);
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         right: 0%;
@@ -201,8 +194,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: -51%;
@@ -246,8 +238,7 @@
         width: max-content;
         left: calc(var(--i11) * 1);
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         left: 0%;
@@ -261,8 +252,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: -50%;
@@ -309,8 +299,7 @@
         width: max-content;
         left: calc(var(--i11) * 1);
     }
-    body .invisible3:hover,
-    .texxt3s:hover .invisible3 {
+    body .texxt3s:hover .invisible3 {
         display: inline-block;
         position: absolute;
         left: 0%;
@@ -324,8 +313,7 @@
         border-radius: 5%;
         padding: var(--smallest);
     }
-    body .invisible4:hover,
-    .texxt4s:hover .invisible4 {
+    body .texxt4s:hover .invisible4 {
         display: inline-block;
         position: absolute;
         left: 0%;
@@ -1052,7 +1040,6 @@ Mission */
     position: relative;
 }
 
-.invisible1:hover,
 .texxt1s:hover .invisible1 {
     display: inline-block;
     position: absolute;
@@ -1068,9 +1055,8 @@ Mission */
     padding: var(--smallest);
     border: 1px solid white;
 }
-.invisible2:hover,
 .texxt2s:hover .invisible2 {
-    display: inline-block;
+    display: block;
     position: absolute;
     left: 101%;
     bottom: -30%;
@@ -1085,7 +1071,6 @@ Mission */
     border: 1px solid white;
 }
 
-.invisible5:hover,
 .texxt5s:hover .invisible5 {
     display: inline-block;
     position: absolute;
@@ -1101,7 +1086,6 @@ Mission */
     padding: var(--smallest);
     border: 1px solid white;
 }
-.invisible6:hover,
 .texxt6s:hover .invisible6 {
     display: inline-block;
     position: absolute;
@@ -1118,12 +1102,10 @@ Mission */
     border: 1px solid white;
 }
 
-.invisible3:hover,
 .texxt3s:hover .invisible3 {
     border: 1px solid white;
 }
 
-.invisible4:hover,
 .texxt4s:hover .invisible4 {
     border: 1px solid white;
 }
