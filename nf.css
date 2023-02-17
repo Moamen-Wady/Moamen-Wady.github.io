@@ -1060,12 +1060,13 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: calc(var(--i11)*1.14);
+    max-width: calc(var(--i11) * 1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
     border-radius: 5%;
     padding: var(--smallest);
+    border: 1px solid white;
 }
 .invisible2:hover,
 .texxt2s:hover .invisible2 {
@@ -1075,12 +1076,13 @@ Mission */
     bottom: -30%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: calc(var(--i11)*1.14);
+    max-width: calc(var(--i11) * 1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
     border-radius: 5%;
     padding: var(--smallest);
+    border: 1px solid white;
 }
 
 .invisible5:hover,
@@ -1091,12 +1093,13 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: calc(var(--i11)*1.14);
+    max-width: calc(var(--i11) * 1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
     border-radius: 5%;
     padding: var(--smallest);
+    border: 1px solid white;
 }
 .invisible6:hover,
 .texxt6s:hover .invisible6 {
@@ -1106,12 +1109,23 @@ Mission */
     bottom: 20%;
     background-color: rgb(48, 71, 87);
     width: max-content;
-    max-width: calc(var(--i11)*1.14);
+    max-width: calc(var(--i11) * 1.14);
     text-align: left;
     color: white;
     font-size: var(--smaller);
     border-radius: 5%;
     padding: var(--smallest);
+    border: 1px solid white;
+}
+
+.invisible3:hover,
+.texxt3s:hover .invisible3 {
+    border: 1px solid white;
+}
+
+.invisible4:hover,
+.texxt4s:hover .invisible4 {
+    border: 1px solid white;
 }
 
 /*/////////////////////////////// 
