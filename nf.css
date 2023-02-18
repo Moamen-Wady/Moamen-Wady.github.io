@@ -38,7 +38,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: 51%;
         top: 0%;
@@ -93,7 +93,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: 51%;
         top: 0%;
@@ -121,7 +121,7 @@
         width: 3rem;
     }
     body .texxt3s:hover .invisible3 {
-        display: inline-block;
+        display: block;
         position: absolute;
         right: 0%;
         bottom: -50%;
@@ -135,7 +135,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: 51%;
         top: 0%;
@@ -181,7 +181,7 @@
         height: var(--i11);
     }
     body .texxt3s:hover .invisible3 {
-        display: inline-block;
+        display: block;
         position: absolute;
         right: 0%;
         bottom: -50%;
@@ -195,7 +195,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: -51%;
         top: 0%;
@@ -253,7 +253,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: -50%;
         top: 23%;
@@ -314,7 +314,7 @@
         padding: var(--smallest);
     }
     body .texxt4s:hover .invisible4 {
-        display: inline-block;
+        display: block;
         position: absolute;
         left: 0%;
         top: 40%;
@@ -991,6 +991,10 @@ Mission */
 .invisiblex {
     display: none;
 }
+.invisiblex p {
+width: 100%;
+margin: 0;
+}
 
 .texxt1s {
     border: 1px solid black;
@@ -1041,7 +1045,7 @@ Mission */
 }
 
 .texxt1s:hover .invisible1 {
-    display: inline-block;
+    display: block;
     position: absolute;
     right: 101%;
     bottom: 20%;
@@ -1072,7 +1076,7 @@ Mission */
 }
 
 .texxt5s:hover .invisible5 {
-    display: inline-block;
+    display: block;
     position: absolute;
     right: 101%;
     bottom: 20%;
@@ -1087,7 +1091,7 @@ Mission */
     border: 1px solid white;
 }
 .texxt6s:hover .invisible6 {
-    display: inline-block;
+    display: block;
     position: absolute;
     left: 101%;
     bottom: 20%;
