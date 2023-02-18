@@ -57,7 +57,7 @@
         --smallest: 0.2rem;
         --smaller: 0.6rem;
         --small: 1rem;
-        --mid-small: 1.5rem;
+        --mid-small: 1.2rem;
         --mid: 2rem;
         --mid-large: 2.2rem;
         --mid-larger: 2.9rem;
@@ -155,7 +155,7 @@
         --smallest: 0.2rem;
         --smaller: 0.6rem;
         --small: 1rem;
-        --mid-small: 1.5rem;
+        --mid-small: 1rem;
         --mid: 2rem;
         --mid-large: 2.2rem;
         --mid-larger: 2.9rem;
@@ -164,7 +164,7 @@
         --i14: 10rem;
         --i20: 14rem;
         --i15: 11rem;
-        --i11: 7.5rem;
+        --i11: 7rem;
     }
     body .about:hover .aboutUs {
         display: inline-block;
@@ -217,7 +217,7 @@
         --smallest: 0.15rem;
         --smaller: 0.45rem;
         --small: 0.8rem;
-        --mid-small: 1rem;
+        --mid-small: .9rem;
         --mid: 1.5rem;
         --mid-large: 1.6rem;
         --mid-larger: 2rem;
@@ -268,7 +268,8 @@
     }
     body .proj-head,
     body .ov-info,
-    body .intro {
+    body .intro,
+    body .cl-page{
         width: 90%;
     }
 }
@@ -278,7 +279,7 @@
         --smallest: 0.1rem;
         --smaller: 0.3rem;
         --small: 0.5rem;
-        --mid-small: 0.75rem;
+        --mid-small: 0.65rem;
         --mid: 1rem;
         --mid-large: 1.1rem;
         --mid-larger: 1.4rem;
@@ -521,7 +522,7 @@ header .logo-container {
     margin: auto;
     position: relative;
     top: 25%;
-    font-size: var(--mid);
+    font-size: var(--mid-small);
     color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     z-index: 400;
@@ -875,11 +876,6 @@ header .xxx {
     font-family: sans-serif;
     margin-left: var(--smaller);
     z-index: 1;
-}
-
-.ntbk .p2::first-letter {
-    font-size: var(--mid-larger);
-    font-family: sans-serif;
 }
 
 .ntbk img {
@@ -1282,6 +1278,14 @@ quality statement /*/
     font-family: sans-serif;
     max-width: 60%;
 }
+.qsx text > p{
+    font-size: var(--smaller);
+    font-weight:normal;
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+    max-width: 75%;
+}
 .qs {
     width: 40%;
     font-size: calc(var(--smaller));
@@ -1425,15 +1429,20 @@ quality statement /*/
 /*/ /////////////////////////////////*/
 
 .cl-page {
-    width: 100%;
+    width: 80%;
     margin: auto;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4,1fr);
 }
 .cl-page img {
-    width: 80%;
+    width: calc(var(--i11)*.85);
+    display: block;
+    margin: auto;
 }
 .cl-h1 {
-    font-size: var(--mid-larger);
+    font-size: var(--mid);
     font-family: sans-serif;
     color: rgb(56, 45, 45);
 }
